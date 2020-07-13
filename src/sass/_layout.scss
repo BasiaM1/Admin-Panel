@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.admin-panel {
+  display: grid;
+  grid-template-columns: minmax(auto, 188px) 1fr;
+  grid-template-rows: 60px auto;
+  grid-template-areas: 'logo topbar'
+    'sidemenu body';
+  max-width: 1280px;
+  min-height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  font-size: $paragraph-font-size;
+  font-family: $font-text;
+  line-height: 1.7;
+  color: $text-color;
+  background-color: $body-color;
+  text-align: center;
+}
+
+.logo_burger {
+  grid-area: logo;
+  height: 60px;
+  background-color: #191919;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  i {
+    color: $white-color;
+    font-size: 25px;
+    cursor: pointer;
+  }
+}
+
+.top-menu {
+  grid-area: topbar;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  right: 0;
+
+  .topbar-menu {
+    display: flex;
+    justify-content: flex-end;
+
+    .top-list {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      border-left: 1px solid $border-color;
+    }
+  }
+}
+
+.sidebar {
+  grid-area: sidemenu;
+  padding: 15px;
+  position: sticky;
+  top: 60px;
+  left: 0;
+
+}
+
+.general-body {
+  grid-area: body;
+  margin: 20px;
+
+  .gen-statistic {
+    margin-bottom: 20px;
+  }
+}

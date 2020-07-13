@@ -1,0 +1,6 @@
+.top-menu {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto auto;
+  @include boxshadow;
+  background-color: #ffffff;
+}

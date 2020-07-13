@@ -1,0 +1,9 @@
+.btn-orange {
+  @include btn(127px, 40px, 10px, 18px, $orange-color, $white-color);
+
+
+}
+
+.btn-refresh {
+  @include btn(41px, 40px, 10px, 18px, $orange-color, $white-color);
+}

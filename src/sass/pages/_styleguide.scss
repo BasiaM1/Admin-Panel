@@ -1,77 +1,58 @@
-/* Variables */
-$button-bgc: #f58220;
-$button-bgc-hover:#ffa200;
-$font-text:'Roboto',
-sans-serif;
-$button-text-color: #ffffff;
-$transition:.3s;
-$color-main: #a6a6a6;
-$section-number-color: #333333;
-$color-topbar: #9c9c9c;
-$body:#f5f5f2;
-$color-sidebar:#191919;
-$color-text-sidebar:#999999;
-
 /* Global */
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
+.styleguide {
+  display: grid;
+  grid-template-columns: minmax(auto, 188px) 1fr;
+  grid-template-rows: 60px auto auto;
+  grid-template-areas: 'logo topbar'
+    'sidemenu sectionone'
+    'sidemenu sectiontwo';
+  font-size: $paragraph-font-size;
   line-height: 1.7;
   font-family: $font-text;
-  color: $color-main;
-  background-color: $body;
+  color: $text-color;
+  background-color: $body-color;
+  max-width: 1280px;
+  min-height: 100vh;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.styleguide {
+.topbar,
+.one,
+.two {
+  @include boxshadow;
+}
 
-  display: grid;
-  grid-template-columns: 15% 85%;
-  // grid-gap: 20px;
+.side-logo {
+  grid-area: logo;
+  height: 60px;
+  background-color: #191919;
+  color: white;
 }
 
 .sidebar {
-  background-color: $color-sidebar;
-  color: $color-text-sidebar;
+  grid-area: sidemenu;
+  padding: 15px;
+  background-color: $sidebar-color;
+  color: $sidebar-text-color;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: $font-light;
   line-height: 42px;
 }
 
-.container {
-  max-width: 1056px;
-  padding: 20px;
-  margin: 0 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.topbar {
   background-color: #ffffff;
+  grid-area: topbar;
+
 }
 
+.one {
+  grid-area: sectionone;
+  margin: 20px 20px 0;
+}
 
-.btn {
-  display: inline-block;
-  width: 127px;
-  height: 40px;
-  border-radius: 3px;
-  background-color: $button-bgc;
-  color: $button-text-color;
-  font-family: $font-text;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 42px;
-  text-decoration: none;
-  text-align: center;
-  cursor: pointer;
-  transition: $transition;
-
-  &:hover {
-    background-color: $button-bgc-hover;
-
-  }
+.two {
+  grid-area: sectiontwo;
+  margin: 20px;
 }

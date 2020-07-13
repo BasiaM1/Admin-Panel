@@ -1,0 +1,44 @@
+@mixin boxshadow() {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: $white-color;
+}
+
+// @mixin position($type, $top, $right, $bottom, $left) {
+//   position: $type;
+//   top: $top;
+//   right: $right;
+//   bottom: $bottom;
+//   left: $left;
+// }
+
+
+// @mixin flex($flex-direction, $align-items, $justify-content) {
+//   display: flex;
+//   flex-direction: $flex-direction;
+//   align-items: $align-items;
+//   justify-content: $justify-content;
+// }
+
+@mixin btn($width, $height, $padding, $size, $btn-bg, $btn-text) {
+  width: $width;
+  height: $height;
+  line-height: 18px;
+  padding: $padding;
+  display: inline-block;
+  background: $btn-bg;
+  color: $btn-text;
+  border-radius: $radius;
+  font-size: $size;
+  font-weight: $font-light;
+  text-decoration: none;
+  transition: $transition;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $light-orange-color;
+  }
+}
+
+@mixin border-bottom() {
+  border-bottom: 2px solid $border-color;
+}

@@ -5,11 +5,183 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin panel </title>
-
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <a href="./styleguide.html">styleguide</a>
+<body class="admin-panel">
+  <div class="logo_burger">
+    <img class="logo" src="images/logo.png" alt="logo">
+    <i class="fas fa-bars"></i>
+  </div>
+  <!-- left menu -->
+  <aside class="sidebar">
+    <ul class="sidebar-menu">
+      <li class="menu-list"><a href="#general">General</a></li>
+      <li class="menu-list"><a href="#details">Details</a></li>
+      <li class="menu-list"> <a href="#links">Links</a></li>
+      <li class="menu-list"> <a href="#banners">Banners</a></li>
+      <li class="menu-list"><a href="#personal_data">Personal data</a></li>
+      <li class="menu-list"><a href="#payout">Payout</a></li>
+      <li class="menu-list"><a href="#postback">Postback</a></li>
+    </ul>
+    <div class="sidebar-manager">
+      <p>Your manager</p>
+      <div class="manager-avatar">
+        <img src="images/profile_manager.png" alt="manager">
+        <p>Mikhael E.</p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- top menu -->
+  <div class="section top-menu">
+    <ul class="topbar-menu">
+      <li class="top-list">
+        <p class="topbar-money">$1,500.00</p>
+      </li>
+      <li class="top-list">bell</li>
+      <li class="top-list">
+        <p class="topbar-login">Leonardo Dicaprio</p>
+      </li>
+      <li class="top-list">logout</li>
+    </ul>
+  </div>
+  <div class="general-body">
+    <!-- section general statistic -->
+    <section class="section gen-statistic">
+      <h2 class="section-header">General statistic</h2>
+      <div class="statistic-date">
+        <div class="date-input">
+          <div class="date-start">11.07.2020</div>
+          <div class="date-end">12.07.2020</div>
+          <div class="date-icon"></div>
+        </div>
+        <a href="#"class="btn btn-refresh">ref</a>
+      </div>
+      <div class="statistic-table">
+        <div class="table-cell-1">
+          <p class="text">Visit Signups <span class="num">124</span></p>
+        </div>
+        <div class="table-cell-2">
+          <p class="text">FTD <span class="num">445</span></p>
+        </div>
+        <div class="table-cell-3">
+          <p class="text">Net deposit <span class="num">564</span></p>
+        </div>
+        <div class="table-cell-4">
+          <p class="text">Turn over <span class="num">432</span></p>
+        </div>
+      </div>
+      <div class="statistic-chart">
+        <p class="text">Earnings chart</p>
+        <div class="graph"></div>
+      </div>
+    </section>
+    <!-- section general links -->
+    <section class="section gen-links">
+      <h2 class="section-header">Links</h2>
+      <a href="#"class="btn btn-orange">+ add new</a>
+      <div class="table-container">
+        <table class="links">
+          <tbody>
+            <tr class="links-row">
+              <td class="links-cell">
+                <p class="text">Home page</p>
+              </td>
+              <td class="links-cell"><a class="link-href" href="#">http://www.homepage.com</a></td>
+              <td class="links-cell">
+                <div class="icons">icons</div>
+              </td>
+            </tr>
+            <tr class="links-row">
+              <td class="links-cell">
+                <p class="text">Currently offer</p>
+              </td>
+              <td class="links-cell"><a class="link-href" href="#">http://www.currently.com</a></td>
+              <td class="links-cell">
+                <div class="icons">icons</div>
+              </td>
+            </tr>
+            <tr class="links-row">
+              <td class="links-cell">
+                <p class="text">Blurpix</p>
+              </td>
+              <td class="links-cell"><a class="link-href" href="#">http://www.blurpix.com</a></td>
+              <td class="links-cell">
+                <div class="icons">icons</div>
+              </td>
+            </tr>
+            <tr class="links-row">
+              <td class="links-cell">
+                <p class="text">Your Site</p>
+              </td>
+              <td class="links-cell"><a class="link-href" href="#">http://www.yoursite.com</a></td>
+              <td class="links-cell">
+                <div class="icons">icons</div>
+              </td>
+            </tr>
+            <tr class="links-row">
+              <td class="links-cell">
+                <p class="text">Google</p>
+              </td>
+              <td class="links-cell"><a class="link-href" href="#">http://www.google.com</a></td>
+              <td class="links-cell">
+                <div class="icons">icons</div>
+              </td>
+            </tr>
+            <tr class="links-row">
+              <td class="links-cell">
+                <p class="text">Facebook</p>
+              </td>
+              <td class="links-cell"><a class="link-href" href="#">http://www.facebook.com</a></td>
+              <td class="links-cell">
+                <div class="icons">icons</div>
+              </td>
+            </tr>
+            <tr class="links-row">
+              <td class="links-cell">
+                <p class="text">Dashboard</p>
+              </td>
+              <td class="links-cell"><a class="link-href" href="#">http://www.dashboard.com</a></td>
+              <td class="links-cell">
+                <div class="icons">icons</div>
+              </td>
+            </tr>
+            <tr class="links-row">
+              <td class="links-cell">
+                <p class="text">Blurax</p>
+              </td>
+              <td class="links-cell"><a class="link-href" href="#">http://www.blurax.com</a></td>
+              <td class="links-cell">
+                <div class="icons">icons</div>
+              </td>
+            </tr>
+            <tr class="links-row">
+              <td class="links-cell">
+                <p class="text">Piece of Wine</p>
+              </td>
+              <td class="links-cell"><a class="link-href" href="#">http://www.pieceofwine.com</a></td>
+              <td class="links-cell">
+                <div class="icons">icons</div>
+              </td>
+            </tr>
+            <tr class="links-row">
+              <td class="links-cell">
+                <p class="text">Twitter</p>
+              </td>
+              <td class="links-cell"><a class="link-href" href="#">http://www.twitter.com</a></td>
+              <td class="links-cell">
+                <div class="icons">icons</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
 </body>
 
 </html>

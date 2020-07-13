@@ -1,16 +1,32 @@
 // DO ZMIANY!!!
-
 /* Colors */
-$paragraph-color: #000000;
-$brand-main-color: #ff0000;
+$orange-color: #f58220; //button
+$light-orange-color:#ffa200; // hover
+$white-color: #ffffff; //text button
 
-/* Font sizes */
-$paragraph-font-size: 16px;
+$text-color: #a6a6a6;
+$dark-gray-color: #333333; //numbers section1
+$light-gray-color: #9c9c9c; //wallet
+$href-color: #56819f; //linki
+$body-color:#f5f5f2;
+$sidebar-color:#191919;
+$sidebar-text-color: #999999;
+$border-color: #e3e3e3;
 
 /* Fonts */
-$brand-font: "Open Sans",
-  Helvetica,
-  Arial;
-$paragraph-font: "Open Sans",
-  Helvetica,
-  Arial;
+$font-text:'Roboto',
+  sans-serif;
+$paragraph-font-size: 16px;
+$font-light: 300;
+$font-normal: 400;
+$font-semibold: 500;
+$font-bold: 700;
+
+/*Others  */
+$transition: .3s;
+$radius: 3px;
+
+
+// $breakpoints:{
+//   small:(min-width:640px)
+// }
