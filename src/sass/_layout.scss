@@ -8,11 +8,11 @@
 
 .admin-panel {
   display: grid;
-  grid-template-columns: minmax(auto, 188px) 1fr;
-  grid-template-rows: 60px auto;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: 60px 1fr;
   grid-template-areas: 'logo topbar'
     'sidemenu body';
-  max-width: 1280px;
+  // max-width: 1280px;
   min-height: 100vh;
   margin: 0 auto;
   text-align: center;
@@ -26,11 +26,14 @@
 
 .logo_burger {
   grid-area: logo;
+  position: fixed;
   height: 60px;
+  width: 15%;
   background-color: #191919;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  z-index: 1;
 
   i {
     color: $white-color;
@@ -61,10 +64,12 @@
 
 .sidebar {
   grid-area: sidemenu;
-  padding: 15px;
-  position: sticky;
+  position: fixed;
   top: 60px;
   left: 0;
+  width: 15%;
+  height: 100%;
+
 
 }
 

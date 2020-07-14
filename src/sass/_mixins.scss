@@ -19,10 +19,8 @@
 //   justify-content: $justify-content;
 // }
 
-@mixin btn($width, $height, $padding, $size, $btn-bg, $btn-text) {
+@mixin btn($width, $padding, $size, $btn-bg, $btn-text) {
   width: $width;
-  height: $height;
-  line-height: 18px;
   padding: $padding;
   display: inline-block;
   background: $btn-bg;
