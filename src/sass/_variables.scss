@@ -26,7 +26,8 @@ $font-bold: 700;
 $transition: .3s;
 $radius: 3px;
 
-
-// $breakpoints:{
-//   small:(min-width:640px)
-// }
+/* MQ */
+$small: 767px;
+$medium: 768px;
+$large:992px;
+$xlarge:1200px;

@@ -12,6 +12,8 @@
   grid-template-rows: 60px 1fr;
   grid-template-areas: 'logo topbar'
     'sidemenu body';
+
+
   // max-width: 1280px;
   min-height: 100vh;
   margin: 0 auto;
@@ -80,4 +82,71 @@
   .gen-statistic {
     margin-bottom: 20px;
   }
+}
+
+@for $i from 1 through 12 {
+  .col-sm-#{$i} {
+    $width: 100% / 12 * $i;
+    flex: 0 0 $width;
+    max-width: $width;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-md-6 {
+  width: 100%;
+  padding: 25px;
+  float: left;
+
+  @media(max-width:$small) {
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+  }
+}
+
+@media(max-width: $small) {
+  @include grid('sm');
+
+  .admin-panel {
+
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: 'logo''sidemenu''body''topbar';
+
+    .logo_burger {
+      position: relative;
+      width: 100%;
+    }
+
+    .sidebar {
+      position: relative;
+      width: 100%;
+      top: 0;
+    }
+  }
+}
+
+@media(min-width: $medium) {
+  @include grid('md');
+}
+
+@media(min-width: $large) {
+  @include grid('lg');
+}
+
+@media(min-width: $xlarge) {
+  @include grid('xl');
 }
