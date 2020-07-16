@@ -12,19 +12,23 @@
 
 <body class="admin-panel">
   <div class="logo_burger">
-    <img class="logo" src="images/logo.png" alt="logo">
-    <i class="fas fa-bars"></i>
+    <div class="logo-img">
+      <img class="logo" src="images/logo.png" alt="logo">
+    </div>
+    <div class="burger">
+      <i class="fas fa-bars"></i>
+    </div>
   </div>
   <!-- left menu -->
   <aside class="sidebar">
     <ul class="sidebar-menu">
-      <li class="menu-list"><a href="#general">General</a></li>
+      <li class="menu-list"><a href="#general"><i class="icon-general"></i><span class="desc-link">General</p></a></li>
       <li class="menu-list"><a href="#details">Details</a></li>
       <li class="menu-list"> <a href="#links">Links</a></li>
       <li class="menu-list"> <a href="#banners">Banners</a></li>
       <li class="menu-list"><a href="#personal_data">Personal data</a></li>
       <li class="menu-list"><a href="#payout">Payout</a></li>
-      <li class="menu-list"><a href="#postback">Postback</a></li>
+      <li class="menu-list"><a href="#postback">>Postback</a></li>
     </ul>
     <div class="sidebar-manager">
       <p>Your manager</p>
@@ -81,8 +85,8 @@
     <section class="section gen-links">
       <h2 class="section-header">Links</h2>
       <a href="#"class="btn btn-orange">+ add new</a>
-      <div class="table-container">
-        <table class="links container">
+      <div class="scroll-wrapper">
+        <table class="links-table container">
           <tbody>
             <tr class="links-row">
               <td class="links-cell">
@@ -179,6 +183,7 @@
       </div>
     </section>
   </div>
+  <script src="js/script.js"></script>
 
 </body>
 
