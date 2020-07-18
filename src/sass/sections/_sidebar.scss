@@ -1,17 +1,29 @@
 .sidebar {
   background-color: $sidebar-color;
 
+
   .sidebar-menu {
+    padding: 15px 0;
     list-style: none;
     text-align: left;
-    padding: 15px;
-    border-bottom: 1px solid $dark-gray-color;
 
-    .menu-list a {
-      text-decoration: none;
-      color: $sidebar-text-color;
-      font-weight: $font-light;
-      line-height: 42px;
+    .menu-list {
+
+      a {
+        display: block;
+        padding-left: 15px;
+
+        text-decoration: none;
+        color: $sidebar-text-color;
+        font-weight: $font-light;
+        line-height: 46px;
+
+        &:hover {
+          color: $white-color;
+          background-color: $dark-gray-color;
+          border-left: 5px solid $orange-color;
+        }
+      }
 
       .desc-link {
         vertical-align: middle;
@@ -22,6 +34,7 @@
 
   .sidebar-manager {
     border-top: 1px solid $dark-gray-color;
+    padding: 15px;
 
     p {
       @extend %h2;
@@ -37,7 +50,11 @@
         padding-left: 10px;
         color: $href-color;
         font-weight: $font-light;
+        cursor: pointer;
 
+        &:hover {
+          color: $light-orange-color;
+        }
       }
     }
   }
