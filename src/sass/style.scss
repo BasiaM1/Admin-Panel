@@ -8,21 +8,9 @@
 /* Components */
 @import "components/buttons";
 @import "components/headers_section";
-@import "components/top_menu";
-@import "components/table";
 
 /* Sections */
 @import "sections/section_general";
 @import "sections/sidebar";
 @import "sections/topbar";
-
-// @import "pages/styleguide";
-// w późniejszej części projektu
-/* Components */
-// @import "components/form_field";
-
-// /* Sections */
-// @import "section/registration_form";
-
-// /* Pages / Views */
-// @import "pages/registration";
+@import "sections/section_links";

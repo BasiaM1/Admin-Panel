@@ -3,26 +3,10 @@
   background-color: $white-color;
 }
 
-// @mixin position($type, $top, $right, $bottom, $left) {
-//   position: $type;
-//   top: $top;
-//   right: $right;
-//   bottom: $bottom;
-//   left: $left;
-// }
-
-
-// @mixin flex($flex-direction, $align-items, $justify-content) {
-//   display: flex;
-//   flex-direction: $flex-direction;
-//   align-items: $align-items;
-//   justify-content: $justify-content;
-// }
-
 @mixin btn($width, $padding, $size, $btn-bg, $btn-text) {
+  display: inline-block;
   width: $width;
   padding: $padding;
-  display: inline-block;
   background: $btn-bg;
   color: $btn-text;
   border-radius: $radius;

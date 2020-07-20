@@ -12,7 +12,6 @@
   grid-template-rows: 60px 1fr;
   grid-template-areas: 'logo topbar'
     'sidemenu body';
-  // max-width: 1280px;
   min-height: 100vh;
   margin: 0 auto;
   text-align: center;
@@ -48,15 +47,20 @@
   position: sticky;
   top: 0;
   right: 0;
+  display: grid;
+  grid-template-columns: 1fr auto auto auto auto;
+  transition: margin-top ease .20s;
 
   .topbar-menu {
     display: flex;
     justify-content: flex-end;
 
+
     .top-list {
       display: flex;
+      padding: 12px 20px 0;
+      justify-content: center;
       align-items: center;
-      padding: 20px;
       border-left: 1px solid $border-color;
     }
   }
@@ -100,6 +104,7 @@
 .row {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .col-md-6 {
@@ -114,8 +119,13 @@
   }
 }
 
-.hidden {
-  margin-top: -552px;
+.hidden-sidebar {
+  margin-top: -200vh;
+}
+
+.hidden-topmenu {
+  margin-top: -200vh;
+  position: relative;
 }
 
 @media(max-width: $large) {
@@ -142,13 +152,11 @@
   @include grid('sm');
 
   .admin-panel {
-
     grid-template-columns: 100%;
     grid-template-rows: auto;
-    grid-template-areas: 'logo''sidemenu''body''topbar';
+    grid-template-areas: 'logo''sidemenu''topbar''body';
 
     .logo_burger {
-      position: relative;
       width: 100%;
     }
 
@@ -157,9 +165,42 @@
       width: 100%;
       top: 0;
     }
+
+    .topbar-menu {
+      justify-content: flex-start;
+    }
+
+    .top-menu {
+      background: $sidebar-color;
+
+
+      .top-list {
+        border-left: 1px solid $dark-gray-color;
+        color: #808080;
+        font-size: 14px;
+        padding: 5px 5px 0;
+      }
+    }
+
+
+    .statistic-date {
+      flex-direction: column;
+
+      input[type="date"] {
+        margin: 15px 0;
+      }
+    }
+
+    .chart-desc {
+      flex-direction: column;
+
+      .chart-box {
+        margin: 15px 0;
+      }
+    }
+
+    table {
+      font-size: 14px;
+    }
   }
 }
-
-// @media(min-width: $xlarge) {
-//   @include grid('xl');
-// }
