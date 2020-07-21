@@ -4,6 +4,11 @@
 
   .top-list {
     position: relative;
+
+    &:hover {
+      background: $table-color;
+      cursor: pointer;
+    }
   }
 
   [class*="icon-"] {
