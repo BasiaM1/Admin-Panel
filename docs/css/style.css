@@ -913,7 +913,10 @@ template {
     grid-template-areas: "logo" "sidemenu" "topbar" "body";
   }
   .admin-panel .logo_burger {
+    position: -webkit-sticky;
+    position: sticky;
     width: 100%;
+    top: 0;
   }
   .admin-panel .sidebar {
     position: relative;

@@ -157,7 +157,9 @@
     grid-template-areas: 'logo''sidemenu''topbar''body';
 
     .logo_burger {
+      position: sticky;
       width: 100%;
+      top: 0;
     }
 
     .sidebar {

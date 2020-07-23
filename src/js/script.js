@@ -1,11 +1,17 @@
 'use strict';
 
+
 function toggleMenuSm(visible) {
   if (window.screen.width < 768) {
     document.querySelector('.sidebar').classList.toggle('hidden-sidebar', visible);
     document.querySelector('.top-menu').classList.toggle('hidden-topmenu', visible);
+
   }
 }
+
+// if ((window.screen.width < 768) && (document.querySelector('.sidebar').classList.contains('hidden-sidebar'))) {
+//   document.querySelector('.general-body').classList.add('margin-body');
+// }
 
 document.querySelector('.burger').addEventListener('click', function (e) {
   e.preventDefault();
