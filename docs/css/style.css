@@ -705,7 +705,6 @@ template {
 
 .hidden-topmenu {
   margin-top: -200vh;
-  position: relative;
 }
 
 @media (max-width: 1160px) {
@@ -919,15 +918,21 @@ template {
     top: 0;
   }
   .admin-panel .sidebar {
-    position: relative;
+    position: fixed;
     width: 100%;
-    top: 0;
+    top: 60px;
+    left: 0;
+    height: 470px;
   }
   .admin-panel .topbar-menu {
     -ms-flex-pack: start;
         justify-content: flex-start;
   }
   .admin-panel .top-menu {
+    position: fixed;
+    left: 0;
+    top: 530px;
+    width: 100%;
     background: #191919;
   }
   .admin-panel .top-menu .top-list {

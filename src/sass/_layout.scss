@@ -125,7 +125,6 @@
 
 .hidden-topmenu {
   margin-top: -200vh;
-  position: relative;
 }
 
 @media(max-width: $large) {
@@ -163,9 +162,11 @@
     }
 
     .sidebar {
-      position: relative;
+      position: fixed;
       width: 100%;
-      top: 0;
+      top: 60px;
+      left: 0;
+      height: 470px;
     }
 
     .topbar-menu {
@@ -173,6 +174,10 @@
     }
 
     .top-menu {
+      position: fixed;
+      left: 0;
+      top: 530px;
+      width: 100%;
       background: $sidebar-color;
 
 
