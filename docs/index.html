@@ -54,7 +54,7 @@
       </li>
       <li class="top-list"><i class="icon-notification"></i>
         <span class="circle"></span></li>
-      <li class="top-list">
+      <li class="top-list user-login">
         <i class="icon-profile"></i>
         <span class="topbar-login">Leonardo Dicaprio</span>
       </li>
@@ -202,19 +202,27 @@
       </div>
       <a href="#" class="btn btn-orange">+ add new</a>
     </section>
-  </div>
-
-  <!-- modals -->
-  <!-- login-modal -->
-  <div class="overlay" id="overlay-login">
-    <div class="login" id="modal-login">
-      <div class="row">
-        <input class="personal-data" type="text" placeholder="&#xf007; login name" name="login-name" id="name">
-        <input class="personal-data" type="password" placeholder="&#xf023; password" name="login-pass" id="password">
-        <button type="submit" class="btn-orange submitBTN">Enter</button>
+    <!-- modals -->
+    <!-- login-modal -->
+    <div class="overlay" id="overlay">
+      <div class="login" id="modal-login">
+        <div class="btn-close close-modal">x</div>
+        <div class="input-icon">
+          <i class="icon-login"></i>
+          <input class="personal-data" type="text" placeholder="login name" style="font-family:arial,FontAwesome"
+            name="login-name" id="name">
+        </div>
+        <div class="input-icon">
+          <i class="icon-password"></i>
+          <input class="personal-data" type="password" placeholder="password" style="font-family: arial, FontAwesome"
+            name="login-pass" id="password">
+        </div>
+        <button type="submit" class="btn-orange close-modal">Enter</button>
       </div>
     </div>
   </div>
+
+
   <script src="js/script.js"></script>
 
 </body>

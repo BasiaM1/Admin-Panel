@@ -912,28 +912,24 @@ template {
     grid-template-areas: "logo" "sidemenu" "topbar" "body";
   }
   .admin-panel .logo_burger {
-    position: -webkit-sticky;
-    position: sticky;
+    position: relative;
     width: 100%;
     top: 0;
   }
   .admin-panel .sidebar {
-    position: fixed;
+    position: relative;
+    top: 0;
     width: 100%;
-    top: 60px;
-    left: 0;
-    height: 470px;
   }
   .admin-panel .topbar-menu {
     -ms-flex-pack: start;
         justify-content: flex-start;
   }
   .admin-panel .top-menu {
-    position: fixed;
-    left: 0;
-    top: 530px;
+    position: relative;
     width: 100%;
     background: #191919;
+    border-top: 1px solid #333333;
   }
   .admin-panel .top-menu .top-list {
     border-left: 1px solid #333333;
@@ -1049,20 +1045,48 @@ template {
   top: 0;
   right: 0;
   padding: 5px 10px;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 @media (max-width: 767px) {
   .overlay .login {
     -ms-flex-direction: column;
         flex-direction: column;
-    width: auto;
   }
 }
 
 .personal-data {
-  width: 250px;
-  margin: 10px 5px;
-  padding: 8px;
+  width: 100%;
+  height: 45px;
+  padding-left: 40px;
+  outline: none;
+  border: 1px solid #e3e3e3;
+  font-size: 14px;
+}
+
+.personal-data:hover {
+  border-color: #ffa200;
+}
+
+.input-icon {
+  width: 30%;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .input-icon {
+    width: 100%;
+  }
+}
+
+.icon-login,
+.icon-password {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 8px;
+  z-index: 1;
 }
 
 .overlay .login.show {

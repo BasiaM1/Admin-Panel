@@ -156,17 +156,15 @@
     grid-template-areas: 'logo''sidemenu''topbar''body';
 
     .logo_burger {
-      position: sticky;
+      position: relative;
       width: 100%;
       top: 0;
     }
 
     .sidebar {
-      position: fixed;
+      position: relative;
+      top: 0;
       width: 100%;
-      top: 60px;
-      left: 0;
-      height: 470px;
     }
 
     .topbar-menu {
@@ -174,11 +172,10 @@
     }
 
     .top-menu {
-      position: fixed;
-      left: 0;
-      top: 530px;
+      position: relative;
       width: 100%;
       background: $sidebar-color;
+      border-top: 1px solid $dark-gray-color;
 
 
       .top-list {
